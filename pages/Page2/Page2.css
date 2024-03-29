@@ -19,7 +19,6 @@
 }
 
 .images{
-    
     width: 50%;
     justify-content: space-between;
 
@@ -29,11 +28,10 @@
     width: 50%;
     justify-content: space-between;
     align-items: center;
-    gap: 12rem;
 }
 
-.image-text>span{
-    width: 40%;
+.image-text>div{
+    width: 35%;
 }
 
 
@@ -46,6 +44,7 @@
 }
 
 .left-image>img{
+    width: 80%;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
@@ -58,6 +57,7 @@
 }
 
 .right-image>img{
+    width: 80%;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
@@ -82,7 +82,57 @@
 
 .hint-btn{
     position: absolute;
-    left: 89.5%;
+    left: 95.5%;
     bottom: 40%;
     cursor: pointer;
+}
+
+.hint-btn>img{
+    width: 100%;
+}
+
+@media (max-width: 1530px){
+    .p2-top span.primaryText{
+        padding-top: 4rem;
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 1200px){
+    /* .hint-btn{
+        left: 94%;
+    } */
+
+    .paddings{
+        padding: 0 4rem 0 4rem !important;
+    }    
+}
+
+@media (max-width: 995px){
+    /* .hint-btn{
+        left: 93%;
+    } */
+
+    .images{
+        width: 80%;
+    }
+
+    .right-image{
+        width: 40%;
+    }
+
+    .left-image{
+        width: 40%;
+    }
+    .image-text{
+        width: 80%;
+    }
+    
+    .image-text>div{
+        width: 40%;
+    }
+
+    .p2-bottom{
+        margin-top: 0.5rem;
+    }
 }

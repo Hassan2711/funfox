@@ -14,6 +14,10 @@ const Page2 = () => {
         return {display: hints && "none"}
       }
 
+      const notLaptop = window.matchMedia('(max-width: 1100px)').matches;
+
+
+
     return (
     <section className="p2-wrapper">
         <div className=" p2-container">
@@ -33,14 +37,18 @@ const Page2 = () => {
                 <div className="flex right-image"><img src="./p2p2.png" alt="" /></div>
               </div>
               <div className="flex image-text">
+                <div>
                 <span className='smallText'>Sunny day at a beach</span>
+                </div>
+                <div>
                 <span className='smallText'>A cold rainy night in a haunted house in October</span>
+                </div>
               </div>
             </div>
 
             <div className='flexCol paddings p2-bottom'>
               <span className='secondaryText'>So, what do you think the definition of setting is? Any guesses?</span>
-              <AnyGuess placeHolder={"______________________________________________________________________________"}/>
+              <AnyGuess notLaptop={notLaptop} placeHolder={"______________________________________________________________________________"}/>
               <div className="flex green-box">
                 <span className="secondaryText">
                   Setting is the time 
@@ -55,7 +63,7 @@ const Page2 = () => {
               </span>
             </div>
 
-            <div className="paddings hint-btn" style={getMenuStyles(hints)} >
+            <div className="hint-btn" style={getMenuStyles(hints)} >
               <img src='./book.png' onClick={()=>setHints((prev)=>!prev)} ></img>
             </div>
         </div>

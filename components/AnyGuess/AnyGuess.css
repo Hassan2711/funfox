@@ -21,6 +21,13 @@
 }
 
 
+@media (max-width: 1100px) {
+    .guess-right.tablet>img {
+        width: 60% !important;
+    }
+}
+
+
 @media (max-width: 995px) {
     .guess-left{
         gap: 0.5rem;
@@ -36,6 +43,11 @@
     
     .guess-right>img{
         width: 60%;
+    }
+
+    input{
+        font-size: 0.75rem;
+        width: 50vw !important;
     }
   }
 
