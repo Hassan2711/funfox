@@ -44,9 +44,9 @@ const Page2 = () => {
               <div className="flex green-box">
                 <span className="secondaryText">
                   Setting is the time 
-                  <span className="secondaryText"><img src="./clock.png" alt="" /></span> 
+                  <span className="secondaryText"> <img src="./clock.png" alt="" /> </span> 
                   and place
-                  <span className="secondaryText"><img src="./house.png" alt="" /></span> 
+                  <span className="secondaryText"> <img src="./house.png" alt="" /> </span> 
                   of a story. It often answers the questions: when? and where?
                 </span>
               </div>
