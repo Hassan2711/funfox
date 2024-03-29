@@ -1,0 +1,41 @@
+.guess-container{
+    gap: 1rem;
+    /* padding-left: 1.25rem; */
+}
+
+.guess-left{
+    gap: 1rem;
+}
+
+
+.guess-left>input{
+    width: 60vw;
+    height: 2.5rem;
+    border: 3px dashed var(--gray);
+    border-radius: 10px;
+    padding: 0 1.25rem 0 1.25rem;
+}
+
+.guess-right{
+    gap: 1rem;
+}
+
+
+@media (max-width: 995px) {
+    .guess-left{
+        gap: 0.5rem;
+    }
+    
+    .guess-left>span{
+        font-size: 0.75rem;
+    }
+
+    .guess-right{
+        gap: 0.5rem;
+    }
+    
+    .guess-right>img{
+        width: 60%;
+    }
+  }
+

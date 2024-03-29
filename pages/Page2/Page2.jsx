@@ -1,0 +1,66 @@
+import React, {useState} from 'react'
+import './Page2.css'
+import Hint from '../../components/Hint/Hint'
+import AnyGuess from '../../components/AnyGuess/AnyGuess'
+
+const Page2 = () => {
+    const [hints, setHints] =useState(false)
+
+    const handleCloseHint = () => {
+        setHints((prev)=>!prev);
+      };
+
+      const getMenuStyles = (hints) => {
+        return {display: hints && "none"}
+      }
+
+    return (
+    <section className="p2-wrapper">
+        <div className=" p2-container">
+           {hints && <Hint onClose={handleCloseHint}/>}
+
+            <div className="flexCol paddings p2-top">
+
+               <span className='primaryText'>Can you figure out the definition of setting from the following examples?</span>
+               <span className='secondaryText'>(take a minute to think about this)</span>
+            </div>
+
+            <div className="flexCol paddings image-container">
+              <div className="flex images">
+                <div className="flex left-image">
+                  <img src="./p2p1.png" alt="" />
+                </div>
+                <div className="flex right-image"><img src="./p2p2.png" alt="" /></div>
+              </div>
+              <div className="flex image-text">
+                <span className='smallText'>Sunny day at a beach</span>
+                <span className='smallText'>A cold rainy night in a haunted house in October</span>
+              </div>
+            </div>
+
+            <div className='flexCol paddings p2-bottom'>
+              <span className='secondaryText'>So, what do you think the definition of setting is? Any guesses?</span>
+              <AnyGuess placeHolder={"______________________________________________________________________________"}/>
+              <div className="flex green-box">
+                <span className="secondaryText">
+                  Setting is the time 
+                  <span className="secondaryText"><img src="./clock.png" alt="" /></span> 
+                  and place
+                  <span className="secondaryText"><img src="./house.png" alt="" /></span> 
+                  of a story. It often answers the questions: when? and where?
+                </span>
+              </div>
+              <span className='smallText'>
+              The time of the story could be in the past, future, day, night, summer or winter. A story may take place in a school, a mall, a desert, an airplane or in a variety of other places.
+              </span>
+            </div>
+
+            <div className="paddings hint-btn" style={getMenuStyles(hints)} >
+              <img src='./book.png' onClick={()=>setHints((prev)=>!prev)} ></img>
+            </div>
+        </div>
+    </section> 
+  )
+}
+
+export default Page2

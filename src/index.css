@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Short+Stack&display=swap');
+
+:root{
+  --gray: #cccccc;
+  --blue-green: #25a3a1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Short Stack", cursive;
+  font-weight: 400;
+  font-style: normal;
+  scroll-behavior: smooth;
+}
+
+.flexAC{
+  display: flex;
+  align-items: center;
+}
+
+.flexCol{
+  display: flex;
+  flex-direction: column;
+}
+
+.flex{
+  display: flex;
+}
+
+.paddings{
+  padding: 0 6rem 0 6rem;
+}
+
+.primaryText{
+  font-size: 2rem;
+}
+
+.secondaryText{
+  font-size: 1.25rem;
+}
+
+.smallText{
+  font-size: 1rem;
+}
+
+/* media queries */
+@media (max-width: 995px) {
+  .primaryText{
+    font-size: 1.5rem;
+  }
+
+  .secondaryText{
+    font-size: 0.75rem;
+  }
+
+  .smallText{
+    font-size: 0.5rem;
+  }
+}
+/* @media (min-width: 1536px) {
+  .innerWidth {
+    max-width: 1280px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 640px) {
+  .paddings {
+    padding: 4rem;
+  }
+}
+
+@media (min-width: 1280px), (min-width: 768px) {
+  .paddings {
+    padding: 2rem;
+  }
+}
+ */
