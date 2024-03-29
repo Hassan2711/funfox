@@ -69,7 +69,9 @@
 
 .green-box{
     height: 5rem;
+    padding-left: 1rem;
     border: 3px dashed #98f4f2;
+    color: white;
     border-radius: 10px;
     background: var(--blue-green);
     align-items: center;
