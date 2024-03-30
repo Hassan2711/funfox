@@ -1,16 +1,14 @@
 
 import './App.css'
-import Hint from '../components/Hint/Hint'
+import Page1 from '../pages/Page1/Page1'
 import Page2 from '../pages/Page2/Page2'
 
 function App() {
 
   return (
     <div className="App">
-      <Page2/>
-      {/* <Hint/> */}
-    
-
+      <Page1/>
+      {/* <Page2/> */}
     </div>
   )
 }

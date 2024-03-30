@@ -38,7 +38,7 @@
 
 .left-image{
     width: 35%;
-    border: 3px dashed var(--gray);
+    border: 3.31px dashed var(--gray);
     border-radius: 10px;
     justify-content: center;
 }
@@ -52,7 +52,7 @@
 .right-image{
     width: 35%;
     border-radius: 10px;
-    border: 3px dashed var(--gray);
+    border: 3.31px dashed var(--gray);
     justify-content: center;
 }
 
@@ -67,16 +67,7 @@
     gap: 0.25rem;
 }
 
-.green-box{
-    height: 5rem;
-    padding-left: 1rem;
-    border: 3px dashed #98f4f2;
-    color: white;
-    border-radius: 10px;
-    background: var(--blue-green);
-    align-items: center;
-}
-.green-box>span>span>img{
+.green-box .p2img{
     width: 1.25rem;
 }
 

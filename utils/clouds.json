@@ -1,0 +1,23 @@
+[
+    {
+      "name": "SETTING",
+      "image": "./cloud1.png"
+    },
+    {
+      "name": "CHARACTERS",
+      "image": "./cloud2.png"
+    },
+    {
+      "name": "PLOT",
+      "image": "./cloud1.png"
+    },
+    {
+      "name": "PROBLEM \nOR \nCONFLICT",
+      "image": "./cloud3.png"
+    },
+    {
+      "name": "RESOLUTION",
+      "image": "./cloud2.png"
+    }
+  ]
+  

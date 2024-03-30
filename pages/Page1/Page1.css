@@ -1,0 +1,78 @@
+.p1-container{
+    gap: 1rem;
+    position: relative;
+}
+
+.p1-heading{
+    color: white;
+    padding-top: 5rem;
+    justify-content: center;
+}
+
+.p1-heading>span{
+    background: var(--pink);
+    padding: 0.2rem 1.75rem 0.3rem 1.75rem;
+    border: 3.31px dashed var(--pink-border);
+    border-radius: 1.5rem;
+}
+
+.green-box>span>b{
+    font-weight: 600;
+}
+
+.girl{
+    /* position: absolute; */
+    padding-left: 1rem;
+    margin-right: 3.5rem;
+    width: 5%;
+    scale: 2.2;
+}
+
+.clouds{
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.p1-clouds{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    min-height: 5rem;
+}
+
+.p1-clouds>img{
+width: 100%;}
+.p1-clouds>span{
+    position: absolute;
+    z-index: 2;
+}
+
+
+@media (max-width: 1400px){
+    .girl{
+        width: 7%;
+    }
+}
+
+@media (max-width: 995px){
+    .girl{
+        width: 9%;
+    }
+}
+
+@media (max-width: 770px){
+    .girl{
+        width: 13%;
+    }
+}
+
+@media (max-width: 670px){
+    .p1-container{
+        gap: 0.75rem;
+    }
+
+    .girl{
+        width: 15%;
+    }
+}
