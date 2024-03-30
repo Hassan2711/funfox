@@ -50,7 +50,7 @@ const Page2 = ({hints, toggleHints}) => {
 
             <div className='flexCol paddings p2-bottom'>
               <span className='secondaryText'>So, what do you think the definition of setting is? Any guesses?</span>
-              <AnyGuess notLaptop={notLaptop} placeHolder={"______________________________________________________________________________"}/>
+              <AnyGuess notLaptop={notLaptop} placeHolder={"_______________________________________________________________________________________________________"}/>
               <div className="flex green-box">
                 <span className="secondaryText">
                   Setting is the time 
