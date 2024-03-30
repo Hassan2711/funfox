@@ -39,7 +39,7 @@ const Page1 = () => {
             <div className="pink-box">
                 <div className="flex banner">
                     <span className="secondaryText">
-                    For today’s lesson, we will try to understand and practice writing the setting for our stories. The setting is an important element of every fiction story.
+                    For today’s lesson, we will try to understand and practice writing the setting for our stories. <br/>The setting is an important element of every fiction story.
                     </span>
                     
                 </div>
