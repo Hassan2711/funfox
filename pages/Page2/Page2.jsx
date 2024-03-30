@@ -11,7 +11,9 @@ const Page2 = ({hints, toggleHints}) => {
     //   };
 
       const getMenuStyles = (hints) => {
-        return {opacity: hints && "0.1"}
+        // return {opacity: hints && "0.1"}
+        return { filter: hints ? "blur(5px)" : "none", opacity: hints ? "0.5" : "1" };
+
       }
 
       const notLaptop = window.matchMedia('(max-width: 1100px)').matches;
