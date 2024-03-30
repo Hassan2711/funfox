@@ -7,6 +7,9 @@ const Page1 = () => {
   return (
     <section className="p1-wrapper">
         <div className="flexCol paddings p1-container">
+            <span className="week1">
+            <img src="./week1.png" alt="week1" />
+            </span>
             <div className="flex p1-heading">
                 <span className='primaryText'>Elements of Story Writing</span>
             </div>

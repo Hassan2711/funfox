@@ -73,13 +73,14 @@
 
 .hint-btn{
     position: absolute;
-    left: 95.5%;
-    bottom: 40%;
+    left: 95%;
+    bottom: 35%;
     cursor: pointer;
 }
 
 .hint-btn>img{
     width: 100%;
+    scale: 1.3;
 }
 
 @media (max-width: 1530px){

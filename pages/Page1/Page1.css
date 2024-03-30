@@ -3,6 +3,17 @@
     position: relative;
 }
 
+.week1{
+    position: absolute;
+    left: 12%;
+    top: 1%;
+    width: 10%;
+}
+
+.week1>img{
+    width: 100%;
+}
+
 .p1-heading{
     color: white;
     padding-top: 5rem;
@@ -56,6 +67,9 @@ width: 100%;}
 }
 
 @media (max-width: 995px){
+    .week1{
+        top: 3%;
+    }
     .girl{
         width: 9%;
     }

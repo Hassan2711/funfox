@@ -3,15 +3,15 @@ import './Page2.css'
 import Hint from '../../components/Hint/Hint'
 import AnyGuess from '../../components/AnyGuess/AnyGuess'
 
-const Page2 = () => {
-    const [hints, setHints] =useState(false)
+const Page2 = ({hints, toggleHints}) => {
+    // const [hints, setHints] =useState(false)
 
-    const handleCloseHint = () => {
-        setHints((prev)=>!prev);
-      };
+    // const handleCloseHint = () => {
+    //     setHints((prev)=>!prev);
+    //   };
 
       const getMenuStyles = (hints) => {
-        return {display: hints && "none"}
+        return {opacity: hints && "0.1"}
       }
 
       const notLaptop = window.matchMedia('(max-width: 1100px)').matches;
@@ -21,7 +21,7 @@ const Page2 = () => {
     return (
     <section className="p2-wrapper">
         <div className=" p2-container">
-           {hints && <Hint onClose={handleCloseHint}/>}
+           {hints && <Hint onClose={toggleHints}/>}
 
             <div className="flexCol paddings p2-top">
 
@@ -64,7 +64,7 @@ const Page2 = () => {
             </div>
 
             <div className="hint-btn" style={getMenuStyles(hints)} >
-              <img src='./book.png' onClick={()=>setHints((prev)=>!prev)} ></img>
+              <img src='./book.png' onClick={toggleHints}/>
             </div>
         </div>
     </section> 

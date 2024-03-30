@@ -1,0 +1,27 @@
+.f-container{
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0rem;
+}
+
+.f-middle>:nth-child(1){
+    cursor: pointer;
+}
+
+
+.f-middle>:nth-child(3){
+    cursor: pointer;
+}
+
+.f-middle>:nth-child(2){
+    color: white;
+    position: relative;
+}
+
+.f-middle>:nth-child(2)>span{
+    position: absolute;
+    right: 60%;
+    bottom: 70%;
+}
