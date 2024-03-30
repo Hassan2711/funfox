@@ -24,11 +24,16 @@ function App() {
     }
   }
 
+  const handlePageChange = (event) => {
+    const newPage = parseInt(event.target.value);
+    setPage(newPage);
+  };
+
   return (
     <div className="App">
       {page === 1 && <Page1 />}
       {page === 2 && <Page2 hints={hints} toggleHints={toggleHints} />}
-      <Footer hints={hints} page={page} nextPage={nextPage} prevPage={prevPage}/>
+      <Footer hints={hints} page={page} nextPage={nextPage} prevPage={prevPage} handlePageChange={handlePageChange}/>
     </div>
   )
 }

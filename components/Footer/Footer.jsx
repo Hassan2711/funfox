@@ -1,7 +1,7 @@
 import React from 'react'
 import './Footer.css'
 
-const Footer = ({hints, page, nextPage, prevPage}) => {
+const Footer = ({hints, page, nextPage, prevPage, handlePageChange}) => {
 
     const getMenuStyles = (hints) => {
         return {opacity: hints && "0.1"}
@@ -17,7 +17,10 @@ const Footer = ({hints, page, nextPage, prevPage}) => {
                 <img src="./arrow-left.png" alt="next" onClick={prevPage} />
                 
                 <span>
-                <span>{page}</span>
+                <select value={page} onChange={handlePageChange}>
+                    <option value={1}>1</option>
+                    <option value={2}>2</option>
+                </select>
                 <img src="./page.png" alt="page" />
                 </span>
 

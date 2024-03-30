@@ -20,8 +20,21 @@
     position: relative;
 }
 
-.f-middle>:nth-child(2)>span{
+.f-middle>:nth-child(2)>select{
     position: absolute;
-    right: 60%;
+    /* right: 60%; */
     bottom: 70%;
+    color: white;
+    width: 100%;
+    border: none; 
+    outline: none;
+    appearance: none;
+    background-color: transparent; 
+    cursor: pointer;
+    text-align: center;
+}
+
+.f-middle>:nth-child(2)>select>option{
+    text-align: center;
+    background: #cd3f97;
 }
